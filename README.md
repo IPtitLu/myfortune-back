@@ -26,9 +26,9 @@ Copy code
 
 Assurez-vous de configurer les variables d'environnement suivantes dans le fichier `.env` :
 
-PORT=3000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
+- PORT=3000
+- MONGO_URI=your_mongodb_uri
+- JWT_SECRET=your_jwt_secret
 
 markdown
 Copy code
@@ -53,7 +53,7 @@ Copy code
 
 ## Contributeurs
 
-- [Votre Nom](lien_vers_votre_profil_github)
+- Lucas Perez https://github.com/IPtitLu
 
 ## Licence
 
