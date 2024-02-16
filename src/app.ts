@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRoutes from "./routes/user.route";
+import actifRoutes from "./routes/actif.route";
 
 dotenv.config();
 
@@ -38,6 +39,7 @@ app.route("/").get((req, res) =>
 
 // routes
 app.use("/api/users", userRoutes);
+app.use("/api/actifs", actifRoutes);
 
 // lancement de l'application
 app.listen(PORT, () => {

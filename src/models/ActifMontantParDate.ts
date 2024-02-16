@@ -11,9 +11,7 @@ const actifMontantParDateSchema = new mongoose.Schema({
     },
 });
 
-const ActifMontantParDate = mongoose.model(
+export const ActifMontantParDate = mongoose.model(
     "ActifMontantParDate",
     actifMontantParDateSchema
 );
-
-export const Actif = mongoose.model("Actif", actifMontantParDateSchema);
