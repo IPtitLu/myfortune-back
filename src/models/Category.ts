@@ -18,4 +18,4 @@ const categorySchema = new mongoose.Schema({
     ],
 });
 
-export const Actif = mongoose.model("AcCategorytif", categorySchema);
+export const Category = mongoose.model("Category", categorySchema);
