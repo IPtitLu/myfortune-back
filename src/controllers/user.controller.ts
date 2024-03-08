@@ -58,9 +58,17 @@ export class UserController {
                 password
             );
 
-            const token = await jwt.sign({ id: user._id }, "token", {
-                expiresIn: "2h",
-            });
+            const token = await jwt.sign(
+                {
+                    id: user._id,
+                    first_name: user.firstName,
+                    last_name: user.lastName,
+                },
+                "token",
+                {
+                    expiresIn: "2h",
+                }
+            );
 
             res.status(200).json({ user, token });
         } catch (error: any) {
